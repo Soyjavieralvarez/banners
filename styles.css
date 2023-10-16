@@ -1,25 +1,35 @@
 body {
     margin: 0;
     font-family: bebas neue;
+    background: #3f3452;
 }
 
 section { padding: 30px 15%; }
 
+.header {
+    text-align: center;
+}
+
 .banner{
-    
     position: relative;
     display: flex;
+    flex-direction: column;
     gap:20px;
-    justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
     min-height: 40vw;
     margin-bottom: 40px;
+    rotate: 0deg;
+    background: #1b1526;
+
 }
+
+
 
 @media (width <= 60px ) {
     .banner {
-        border: solid 2px red;
         text-align: center;
         flex-direction: column-reverse;
         justify-content: center;
@@ -33,10 +43,10 @@ section { padding: 30px 15%; }
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    width: 200%;
+    width: 90%;
     height: 110%;
-    rotate: -2deg;
-    background: #1b1526;
+    
+    
 }
 
 .banner h2{
@@ -76,5 +86,13 @@ section { padding: 30px 15%; }
     object-fit: cover;
     animation: 
     morph 3.5s linear infinite;
+}
+
+.p {
+    color: white;
+}
+
+h2 {
+    color: white
 }
 
